@@ -1,12 +1,19 @@
 .App {
   text-align: center;
+  background-image: url("https://wallpapercave.com/wp/zwG8tL8.jpg");
+  background-size: contain;
 }
 .mydiv {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 10px 7%;
-  box-shadow: 1px 1px 5px grey;
+  box-shadow: 1px 1px 5px rgb(31, 30, 30);
   padding: 10px;
+  color: #ebebeb;
+  border-radius: 5px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 100;
 }
 
 .gallery {
@@ -16,6 +23,63 @@
 }
 
 .item {
-  width: 30%;
+  width: 40%;
   margin: 5px;
+}
+
+.BUTTON_JQG {
+  background: #e9e9e9;
+  background-image: -webkit-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -moz-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -ms-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -o-linear-gradient(top, #3d94f6, #1e62d0);
+  background-image: -webkit-gradient(to bottom, #3d94f6, #1e62d0);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 20px;
+  border-radius: 10px;
+  color: #000000;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 100;
+  padding: 10px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  border: solid #000102 2px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.BUTTON_JQG:hover {
+  border: solid #000000 2px;
+  background: #ffe8ec;
+  background-image: -webkit-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -moz-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -ms-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -o-linear-gradient(top, #1e62d0, #3d94f6);
+  background-image: -webkit-gradient(to bottom, #1e62d0, #3d94f6);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.css-input {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  border-width: 2px;
+  border-color: #000000;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: double;
+  border-radius: 15px;
+  box-shadow: 0px 0px 17px rgba(66, 66, 66, 0.75);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+}
+.css-input:focus {
+  outline: none;
 }

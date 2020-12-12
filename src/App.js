@@ -43,36 +43,35 @@ function App() {
 
 const buttonClickHandler = () => {
   setDidClickButton(true)
-  // return(
-  //   // <div><Counter /></div>
-  // )
 }
   return (
-    
+
     <div className="App">
+      <div className="mydiv"><span>Photo Picker</span></div>
       <div className= "mydiv">
         <span>Search</span>
-        <input 
+        <input className= "css-input"
         style = {{width: "60%"}}
         type= "text" name="value" onChange= {handleChange}/>
-        <button onClick= {handleSubmit}>send</button>
+        <button className= "BUTTON_JQG" onClick= {handleSubmit}>Go!</button>
       </div>
       <div className= "mydiv">
-        <input 
+        <input className= "css-input"
         style = {{width: "10%"}}
         type= "text" value= {counter} onChange= {handleChange}/>
-        <button onClick= {buttonClickHandler}>countdown</button>
+        <button className= "BUTTON_JQG" onClick= {buttonClickHandler}>COUNTDOWN</button>
       </div>
       <div className= "gallery">
       {
         results.map((item)=>{
-          return <img className="item" key={item.id} src= {item.urls.small}/>
+          return <img className="item" key={item.id} src= {item.urls.regular}/>
         })
       }
     </div>
     </div>
   );
 }
+
 
 export default App;
 //https://api.unsplash.com/photos/?client_id=7D7u3CPCjjKKqHEGxQEtP3EtMCut41wiPsMsG7BSJqI
